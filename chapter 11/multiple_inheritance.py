@@ -18,4 +18,4 @@ b= Programmer()
 
 b.show("Rohit" , 1200000)
 b.printlanguage()
-print(b.company)
+print(b.language)
