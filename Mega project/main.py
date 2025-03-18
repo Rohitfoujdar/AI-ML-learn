@@ -87,14 +87,15 @@ def processCommand(command):
     elif "open youtube" in command.lower():
         webbrowser.open("https://www.youtube.com/")
         speak("Opening YouTube")
-    elif "open chatgpt" in command.lower():
+    elif "open facebook" in command.lower():
         webbrowser.open("https://www.facebook.com/")
         speak("Opening facebook")
-    elif "open linkdin" in command.lower():
-        webbrowser.open("https://www.linkedin.com/")
-        speak("Opening linkdin")
+    elif "open github" in command.lower():
+        webbrowser.open("https://www.github.com/")
+        speak("Opening github")
     elif command.lower().startswith("play"):
         song = command.lower().split(" ")[1]
+        print("_________command--", command, song)
         link = music_library.music[song]
         webbrowser.open(link)
     elif "stop" in command.lower() or "exit" in command.lower():
